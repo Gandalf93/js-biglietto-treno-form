@@ -11,18 +11,25 @@
 <body>
 
     <main>
-        <section>
-            <div class="alto">
+        <section class="text-center mt-5">
+            <div >
                 <h2 class="text-uppercase">calcola il prezzo del tuo biglietto</h2>
-                <div class="container p-4 cont_piccolo mt-3 mb-3">
-                    <div class="row justify-content-center p-2">
-                        <div class="col-3 d-flex justify-content-center">
+                <div class="container mt-5">
+                
+
+
+
+                    <div class="row">
+                        <div class="col">
+                            <label for="nome">Nome e Cognome</label>
                             <input type="text" id="nome">
                         </div>
-                        <div class="col-3 d-flex justify-content-center">
+                        <div class="col">
+                            <label for="Km">Km da percorrere</label>
                             <input type="number" id="km">
                         </div>
-                        <div class="col-3 d-flex justify-content-center">
+                        <div class="col">
+                            <label for="fascia-eta">Fascia di età</label>
                             <select name="" id="fascia-eta">
                                 <option value="minorenne">Minorenne</option>
                                 <option value="maggiorenne">Maggiorenne</option>
@@ -31,53 +38,54 @@
                         </div>
                     </div>
 
-                    <div class="row justify-content-center">
-                        <div class="col-1 d-flex justify-content-center">
-                            <button id="genera">Genera</button>
-                        </div>
-                        <div class="col-1 d-flex justify-content-center">
-                            <button id="annulla">Annulla</button>
-                        </div>
-                        
+                    <div class="row  mt-5 mb-5">
+                        <div class="col">
+                            <button id="genera" class="btn btn-primary">Genera</button>
+                            <button id="annulla" class="btn btn-primary">Annulla</button>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-                        
-                          
-        <section>
-            <div class="alto ">
-                <h2 class="text-uppercase">il tuo biglietto</h2>
-                <div class="container p-4 cont_piccolo mt-3">
-                <table class="table">
-                    <thead>
-                      <tr>
-                        <th scope="col-2">Nome Passeggero</th>
-                        <th scope="col-2">Offerta</th>
-                        <th scope="col-2">Carrozza</th>
-                        <th scope="col-2">Codice CP</th>
-                        <th scope="col-2">Costo Biglietto</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row" id="passeggero"></th>
-                        <td id="offerta"></td>
-                        <td></td>
-                        <td></td>
-                        <td id="prezzo"></td>
-                      </tr>
-                     
-                    </tbody>
-                  </table>
-                </div>
-            </div>
-        </section>
-    </main>
+        </div>
+    </section>
+                    
+    <section id="biglietto">
+        <div class="wrapper mt-3 text-center">
+            <h2 class="text-uppercase">il tuo biglietto</h2>
+            
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Nome Passeggero</th>
+                    <th scope="col">Offerta</th>
+                    <th scope="col">Carrozza</th>
+                    <th scope="col">Codice CP</th>
+                    <th scope="col">Costo Biglietto</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row" id="passeggero"></th>
+                    <td id="offerta"></td>
+                    <td id="carrozza"></td>
+                    <td id="codiceCp"></td>
+                    <td id="prezzo"></td>
+                  </tr>
+                 
+                </tbody>
+              </table>
+            
+        </div>
+    </section>
+</main>
 
-    <script type="text/javascript" src="js/script.js"></script>
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 </html>
+                       
+                            
+                        
+                        
+                          
