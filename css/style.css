@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.cont_piccolo{
+    margin: auto;
+    width: 80%;
+    background-color: aquamarine;
+    
+}
+
+.col-3{
+    margin: 10px;
+}
+
+.alto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    
+    
+    
